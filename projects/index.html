@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECTS | Ghost Before Optics</title>
+
+    <!-- Icon -->
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.png">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav text-start" style="max-width: 1320px;">
+                    <li class="nav-item"><a class="nav-link" href="..">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../projects">PROJECTS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../services">SERVICES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../about">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../blog">BLOG</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!--HEADER-->
+    <header class="page-header" style="--header-bg: url('../assets/header-projects.jpg');">
+        <div class="container text-center">
+            <h1 class="fw-light">What we do?</h1>
+        </div>
+    </header>
+
+    <!--FADE IN START-->
+    <div id="content">
+
+    <!--UNDER CONSTRUCTION-->
+    <section class="container my-5 text-center p-4 rounded" style="background-color: #f8f9fa;">
+        <h1>Project showcases available upon request</h1>
+        <h2>📽️💎✨🪩</h2>
+    </section>
+
+    <!--
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/placeholder-img1.jpg" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/placeholder-img2.jpg" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 2</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/placeholder-img3.jpg" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 3</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                    </div>
+                </div>
+            </div>
+    -->
+    </section>
+
+    <!--EMAIL FORM-->
+    <section id="contact" class="container my-5 text-center">
+        <h2 class="fw-light">Get in touch</h2>
+        <form id="contact-form">
+            <!--SERVICE DROPDOWN-->
+            <select id="service" class="form-control mb-2" required>
+                <option value="" disabled selected>Select a subject</option>
+                <option value="Luxury 3D Showcase">Luxury 3D Showcase</option>
+                <option value="Custom 3D Animation">Custom 3D Animation</option>
+                <option value="Template 3D Ad">Template 3D Ad</option>
+                <option value="Talent Outsourcing">Talent Outsourcing</option>
+                <option value="Other">Other:</option>
+            </select>
+
+            <input type="text" id="subject" placeholder="Subject" class="form-control mb-2" required>
+            <input type="text" id="name" placeholder="Your Name" class="form-control mb-2" required>
+            <input type="email" id="email" placeholder="Your Email" class="form-control mb-2" required>
+            <textarea id="message" placeholder="Your Message" class="form-control mb-2" required></textarea>
+            <button type="submit" class="btn-light">Send</button>
+        </form>
+    </section>
+    
+    <!--FOOTER-->
+    <footer class="footer">
+        <a href="mailto:j.sulic@gmail.com" class="text-light">j.sulic@gmail.com</a>
+    </footer>
+    
+    <!--FADE IN END-->
+    </div>
+
+    <!--BOOTSTRAP STUFF-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!--CONTACT FORM || EMAILJS SERVICE-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "fPhoL_ggY_Nzw_WSu", // public key
+            });
+        })();
+    </script>
+    
+    <script src="../js/scripts.js"></script>
+</body>
+</body>
+</html>

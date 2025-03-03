@@ -1,0 +1,197 @@
+body {
+    background-color: #fff;
+    color: #000;
+    font-family: "Lexend", serif;
+}
+
+/*NAVBAR STUFF*/
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 0;
+}
+.active {
+    font-weight: bold;
+}
+
+/*HERO VISUALS -> LANDING PAGE*/
+.hero {
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding-top: 120px;
+}
+.hero video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero-content {
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+}
+.hero img {
+    max-width: 200px;
+}
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/*SCROLL DOWN*/
+.scroll-down {
+    position: absolute;
+    bottom: 20px;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    animation: bounce 1.5s infinite;
+}
+
+.scroll-down i {
+    display: block;
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+
+/*LIGHT BUTTON*/
+.btn-light {
+    background-color: #0005;
+    color: #ffffff;
+    font-weight: light;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+    border: 1px solid #fff;
+}
+.btn-light:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/*FORM*/
+.form-control {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+    border: 1px solid #000;
+}
+
+/*FOOTER*/
+.footer {
+    color: #fff;
+    background: #000;
+    padding: 20px;
+    padding-top: 30px;
+    text-align: center;
+}
+.h2 {
+    font-weight: light;
+}
+
+/*JUSTIFY TEXT*/
+.justify-text {
+    text-align: justify;
+}
+
+/* Base header styling */
+.page-header {
+    position: relative;
+    background: var(--header-bg, url("../assets/default-header.jpg")) center/cover no-repeat;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding-top: 60px; /* Adjust based on navbar height */
+}
+
+/* Dark overlay to enhance text readability */
+.page-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+/* Ensure text is on top */
+.page-header .container {
+    position: relative;
+    z-index: 2;
+}
+
+/*CARDS*/
+.card {
+    background-color: #fff;
+    color: #000;
+    font-weight: light;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+    border: 1px solid #000;
+}
+.card-img {
+    border-radius: 5px;
+    margin: auto;
+}
+
+/*ANIMATE ON HOVER*/
+.video {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#content {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}

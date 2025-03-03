@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT | Ghost Before Optics</title>
+
+    <!-- Icon -->
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.png">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav text-start" style="max-width: 1320px;">
+                    <li class="nav-item"><a class="nav-link" href="..">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../projects">PROJECTS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../services">SERVICES</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../about">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../blog">BLOG</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!--HEADER-->
+    <header class="page-header" style="--header-bg: url('../assets/header-image.jpg');">
+        <div class="container text-center">
+            <h1 class="fw-light">Who are we?</h1>
+        </div>
+    </header>
+
+    <!--FADE IN START-->
+    <div id="content">
+
+    <!-- ABOUT SECTION -->
+    <section class="container my-5 text-center p-4 rounded" style="background-color: #f8f9fa;">
+        <div class="row align-items-center">
+            <div class="col-md-4">
+                <img src="../assets/jure-sulic.jpg" alt="Jure Sulič" class="img-fluid rounded-circle">
+            </div>
+            <div class="col-md-8">
+                <h2>Jure Sulič | Founder</h2>
+                <p class="justify-text">
+                    I am Jure Sulič - a 3D artist originally from Slovenia but currently living and working in Helsinki, Finland. I am the person behind Ghost Before Optics (along with occasional help and amazing advice from my partner Celeste Sanja Smareglia).
+                    </br></br>
+                    I have been thinking about starting a 3D design and animation company that specializes in jewelry and high fashion rendering for some years and now I am finally making my dreams a reality. I really hope my advice (<a href="../blog/" style="color: #000;">blog</a>) and services will help you grow your business and get new opportunities. I would love chatting with you about anything that involves 3D art, so please don't hesitate to reach out in the form below ⬇️ or on social media ✨
+                </p>
+
+                <!-- Social Media Links -->
+                <div class="row mt-3">
+                    <div class="col-12 d-flex justify-content-center gap-2 flex-wrap">
+                        <a href="https://www.instagram.com/you_re_cgi" target="_blank" class="btn btn-light">
+                            <i class="fab fa-instagram"></i> @you_re_cgi
+                        </a>
+                        <a href="https://x.com/you_re95" target="_blank" class="btn btn-light">
+                            <i class="fab fa-x-twitter"></i> @you_re95
+                        </a>
+                        <a href="mailto:j.sulic@gmail.com" target="_blank" class="btn btn-light">
+                            <i class="fa-regular fa-envelope"></i> j.sulic@gmail.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+</section>
+
+
+    <!--EMAIL FORM-->
+    <section id="contact" class="container my-5 text-center">
+        <h2 class="fw-light">Let's chat!</h2>
+        <form id="contact-form">
+            <!--SERVICE DROPDOWN-->
+            <select id="service" class="form-control mb-2" required>
+                <option value="" disabled selected>Select a subject</option>
+                <option value="Luxury 3D Showcase">Luxury 3D Showcase</option>
+                <option value="Custom 3D Animation">Custom 3D Animation</option>
+                <option value="Template 3D Ad">Template 3D Ad</option>
+                <option value="Talent Outsourcing">Talent Outsourcing</option>
+                <option value="Other">Other:</option>
+            </select>
+
+            <input type="text" id="subject" placeholder="Subject" class="form-control mb-2" required>
+            <input type="text" id="name" placeholder="Your Name" class="form-control mb-2" required>
+            <input type="email" id="email" placeholder="Your Email" class="form-control mb-2" required>
+            <textarea id="message" placeholder="Your Message" class="form-control mb-2" required></textarea>
+            <button type="submit" class="btn-light">Send</button>
+        </form>
+    </section>
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <a href="mailto:j.sulic@gmail.com" class="text-light">j.sulic@gmail.com</a>
+    </footer>
+    
+    <!--FADE IN END-->
+    </div>
+
+    <!--BOOTSTRAP STUFF-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!--CONTACT FORM || EMAILJS SERVICE-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "fPhoL_ggY_Nzw_WSu", // public key
+            });
+        })();
+    </script>
+    
+    <!--SCRIPTS-->
+    <script src="../js/scripts.js"></script>
+</body>
+</body>
+</html>
